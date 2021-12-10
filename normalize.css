@@ -1,0 +1,121 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgba(255,228,255,0), rgba(255,228,255,1));
+}
+
+#logo
+{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    padding: 0.5em 1em 1em 1em;
+}
+
+header
+{
+    border-radius: 25px;
+    background-color:#dcdcdc;
+    color:#000000;
+    padding-top: 0em;
+    padding-bottom: 1em;
+    height: 50px;
+}
+
+header h1
+{
+    margin: 0;
+    text-align: center;
+    position: relative;
+    padding: 10px 650px 10px; 
+}
+
+main
+{
+    display: flex;
+    height: 600px;
+}
+
+nav
+{    
+    flex: 25%;
+    padding: 25px 0 0 1px;
+    font-family: Verdana;
+    font-size: 1em;
+}
+
+nav a
+{
+    color: #000000;
+    text-decoration: #ffffff;
+}
+
+ol 
+{
+    margin: 0;
+    padding: 0;
+}
+
+#honestystatement
+{
+    flex: 250%;
+    margin-top: 100px;
+    padding-left: 10em;
+    padding-right: 10em;
+    font-family: Verdana;
+    font-size: 0.9em;
+}
+
+form 
+{
+    display: grid;
+    grid-template-columns: 150px 500px;
+    grid-gap: 15px;
+}
+
+#form
+{
+   flex: 350%; 
+   margin-top: 100px;
+   padding-left: 25em;
+}
+
+.hidden
+{
+    display: none;
+} 
+
+#button
+{
+    /* text-align: centre;  */
+    grid-column: 2/3;
+}
+
+input[type='submit'], input[type='reset'] 
+{
+    width: 100px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#reflection
+{
+    flex: 250%;
+    margin-top: 65px;
+    padding-left: 10em;
+    padding-right: 10em;
+    font-family: Verdana;
+    font-size: 0.9em;
+}
+
+footer
+{
+    border-radius: 25px;
+    clear: both;
+    margin-top: 20px;
+    padding: 10px 650px 10px;
+    background-color: #dcdcdc;
+    color:#000000;
+    font-size: 15px;
+}

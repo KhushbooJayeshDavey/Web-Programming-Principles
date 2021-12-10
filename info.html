@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Khusboo Jayesh Davey's Info page</title>
+    <meta charset="UTF-8"/>
+	<link rel="stylesheet" href="normalize.css"/>
+    <script src="info.js"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="designzen.jpg" alt="Design Zen">
+        <h1>Signup Form</h1>
+    </header>
+
+    <main>
+
+        <nav class="navigation">
+            <ol>
+                <li><a href="honesty.html">Welcome</a></li>
+                <li><a href="info.html">Signup</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+            </ol>
+        </nav>
+
+        <div id="form">
+            <p>Get started with Designzen! Create an account, it's free! loved by beginners and experts everywhere! :)</p>
+
+            <form id ="signupform" name = signup action="https://httpbin.org/post" method="post" onsubmit="return validateform(this);">
+
+            <!-- First Name -->
+            <label for="firstname">First Name :-</label>
+            <input id ="firstname" name="fname" type="text" pattern="[A-Z][a-zA-Z]*" placeholder="start with caps & only alphabets allowed" required>
+
+            <!-- Last Name -->
+            <label for="lastname">Last Name :-</label>
+            <input id ="lastname" name="lname" type="text" pattern="[A-Z][a-zA-Z]*" placeholder="start with caps & only alphabets allowed"
+            required>
+
+            <!-- Password -->
+            <label for="password">Password :-</label>
+            <input id="password" name="pwd" type="password" placeholder="6 characters long, use combination of letters and numbers" required>
+
+            <!-- Confirm Password -->
+            <label for="confirmpassword">Confirm Password :-</label>
+            <input id="confirmpassword" name="cpwd" type="password" placeholder="same as password" required>
+
+            <!-- User Name -->
+            <label for="username">User Name :-</label>
+            <input id ="username" name="uname" type="text" placeholder="start with an alphabet, must have atleast 6 characters" required>
+
+            <!-- Education Status -->
+            <label>Education Status :- </label>
+            <div class="edustatus">
+                <input name="status" type="radio" value="Graduated" required>Graduated
+                <input name="status" type="radio" value="Current enrolled" required>Current enrolled
+                <input name="status" type="radio" value="Did not graduate" required>Did not graduate
+            </div>
+
+            <!-- Email -->
+            <label for="email">Email :-</label>
+            <input id="email" name="mail" type="email" placeholder="example@abc.com" required>
+
+            <!-- Age -->
+            <label for="age">Age :-</label>
+            <input id="age" name="yourage" type="number" placeholder="between 18 - 60" required>
+
+            <!-- hidden -->
+            <input type="hidden" name="lastName" id="lastName" value="Davey"/>
+            <input type="hidden" name="studentId" id="studentId" value="157478199"/>
+
+            <!-- Submit and Reset -->
+            <div id="button">
+                <input name="submit" type="submit" value="Submit">
+                <input name="reset" type="reset" value="Reset">
+            </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="center">
+            &copy; 2021 Khushboo Jayesh Davey
+            <a href="https://github.com/KhushbooJayeshDavey">github's account</a>
+        </div>
+    </footer>  
+</body>
